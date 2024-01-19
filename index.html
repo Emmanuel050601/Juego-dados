@@ -1,0 +1,83 @@
+<!--
+    Autor: Torres Rocha Luis
+    Fecha: 19-Octubre-2023
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Evaluación - Ejercicio 3</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <center>
+            
+            <div class="nombre" name="nombre" id="nombre">
+                <label>
+                    <b>Nombre del jugador:</b>
+                    <input type="text" id="txtNombre"/>
+                </label>
+                <br>
+                <label>
+                    <b>Capital del jugador:</b>
+                    <input type="text" id="txtCapital"/>
+                </label>
+                <button type="button" onclick="mostrarContenido()" class="siguiente" id="siguiente">Siguiente</button>
+            </div>
+            
+            <div class="contenedor-juego" id="contenedor-juego">
+                <form name="formulario">
+                    <h1> El juego del 7</h1>
+                    <label>
+                        <b>Jugador: </b>
+                        <b id="lblNombre"> </b>
+                    </label>
+                    <br><br>
+                    <label>
+                        <b>Capital del jugador: </b>
+                        <b id="lblCapital"> </b>
+                    </label>
+                    <br><br>
+                    <label>
+                        <b>Cantidad de apuesta</b>
+                        <input type="text" id="txtApuesta"/>
+                    </label>
+                    <br><br>
+                    <label> 
+                        <b> Selecciona la jugada de apuesta</b>
+                        <select id="sltJugada">
+                            <option id="jugadaMayor">La suma de los dados será mayor a 7</option>
+                            <option id="jugadaMenor">La suma de los dados será menor a 7</option>
+                            <option id="jugadaIgual">La suma de los dados será igual a 7</option>
+                        </select>
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <b>El valor obtenido del dado 1 es: </b>
+                        <b id="valor1"> </b>
+                        <br>
+                        <img id="dado1" src="" alt="" >
+                    </label>
+                    <br>
+                    <label>
+                        <b>El valor obtenido del dado 2 es: </b>
+                        <b id="valor2"> </b>
+                        <br>
+                        <img id="dado2" src="" alt="" >
+                    </label>
+                    <br><br>
+
+                    <label id="resultado">
+                    </label>
+                    <br><br>
+                    
+                    <button type="button" onclick="btnJugada()" id="btnJugar">Jugar</button>
+                    <button type="button" onclick="btnNuevo()" id="btnNuevoJuego">Jugar nuevamente</button>
+                    <button type="button" onclick="btnSalir()" id="btnSalirJuego">Salir</button>
+                </form>
+            </div>
+        </center>
+        <script type="text/javascript"  src="Js/script.js"></script>
+    </body>
+</html>
